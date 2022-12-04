@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: #fafafa;
+    box-shadow: 0px -1px 11px 7px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    opacity: 0.9;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+a:link {
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+nav div {
+    width: 10%;
+}
+
+nav ul {
+    width: 70%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    color: grey;
+    transition: all 0.3s;
+    padding: 20px;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li:hover {
+    background-color: #30DEBF;
+    border-radius: 30px;
+
+}
+
+nav a[title] {
+    width: 70px;
+    height: 30px;
+    border: 2px solid #fafafa;
+    border-radius: 10px;
+    box-shadow: 0px -1px 5px 3px rgba(0, 0, 0, 0.5);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav>a img {
+    width: 30px;
+    display: none;
+}
+
+
+
+
+
+#menubox {
+    width: 20%;
+    height: 20vh;
+    display: none;
+    justify-content: flex-end;
+
+
+
+
+}
+
+#menubox ul {
+    display: none;
+    width: 100%;
+    height: 30vh;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 30px;
+    box-shadow: 0px -1px 5px 3px rgba(0, 0, 0, 0.5);
+    ;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#menubox ul li {
+    margin: 20px 0;
+}
+
+#home {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80vh;
+
+}
+
+#home img {
+    width: 600px;
+    object-fit: contain;
+}
+
+#home .intro {
+    display: flex;
+    justify-content: center;
+
+
+    flex-direction: column;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+#home .intro h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#home .intro p {
+    letter-spacing: 0.2px;
+    color: grey;
+    font-size: 16px;
+}
+
+#home .intro p:nth-of-type(2) {
+    letter-spacing: 0;
+    margin-bottom: 15px;
+}
+
+#home .intro a {
+    height: 40px;
+    width: 200px;
+    background-color: #00ac8d;
+    color: white;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#skills {
+    width: 100%;
+    height: 100vh;
+    margin-top: 60px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+}
+
+#skills .leftcontainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#skills .left {
+    width: 50%;
+    /* background-color: green; */
+
+
+}
+
+#skills .left header {
+    color: #00ac8d;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#skills .left section h1 {
+    text-transform: capitalize;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+
+}
+
+#skills .left section .circlecontainer {
+    width: 85%;
+    margin-top: 60px;
+
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#skills .left section .circlecontainer .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #00ac8d29;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills .left section .circlecontainer .info {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#skills .left section .circlecontainer .info h5 {
+    letter-spacing: 0.8px;
+}
+
+#skills .left section .circlecontainer .info p {
+    font-size: 14px;
+}
+
+#skills .right {
+    width: 40%;
+    padding-top: 60px;
+}
+
+#skills .right img {
+    width: 100%;
+}
+
+#recent {
+    height: 100vh;
+}
+
+#recent header {
+    color: #00ac8d;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+#recent header div {
+    text-transform: capitalize;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: black;
+    margin-top: 10px;
+}
+
+#recent article {
+    text-align: center;
+}
+
+#client{
+    height: 100vh;
+}
+#client header {
+    color: #00ac8d;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#client header div {
+    text-transform: capitalize;
+    font-size: 70px;
+    letter-spacing: 2px;
+    color: black;
+    margin-top: 40px;
+}
+
+#client article {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#client article .card {
+
+    border: none;
+    box-shadow: 0 0 5px 5px rgb(225, 224, 224);
+    padding: 20px;
+}
+
+#client article .card .card-img-top {
+    text-align: center;
+
+}
+
+#client article .card .card-img-top .card-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#client article .card .card-body .fa-star{
+    color: 
+    goldenrod;
+}
+
+#client article .card .card-body div{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#client article .card .card-body .card-text{
+    text-align: center;
+    font-size: 1.1rem;
+    width: 100%;
+    height: 113px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+#client article .card .card-body a {
+    color: white;
+    background-color: #00ac8d;
+    width: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:1000px) {
+    nav ul {
+        display: none;
+    }
+
+    nav>a {
+        display: flex;
+    }
+
+    nav>a img {
+        width: 30px;
+        display: block;
+    }
+
+    .intro {
+        margin-top: 40px;
+    }
+
+
+}
